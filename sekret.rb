@@ -5,21 +5,21 @@
 class Sekret < Formula
   desc "Secure your API keys in OS keychain, load them as env vars"
   homepage "https://github.com/eazyhozy/sekret"
-  version "0.1.1"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/eazyhozy/sekret/releases/download/v0.1.1/sekret_darwin_amd64.tar.gz"
-      sha256 "6c14df1ad5f47337018be0af943d9465300f9b2d0830ab1c1a742b91896c0c86"
+      url "https://github.com/eazyhozy/sekret/releases/download/v0.2.0/sekret_darwin_amd64.tar.gz"
+      sha256 "cad3c024f95412d90230c82a91f68cde0847ffcc4aa301b8cd78f1912ea43029"
 
       def install
         bin.install "sekret"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/eazyhozy/sekret/releases/download/v0.1.1/sekret_darwin_arm64.tar.gz"
-      sha256 "aa46c85d2039be0e3095ef69af1e43db0374891ebfa024c836a7a63fbd6598f5"
+      url "https://github.com/eazyhozy/sekret/releases/download/v0.2.0/sekret_darwin_arm64.tar.gz"
+      sha256 "d0e831ec3b8844f6ef600ea1f86caa6686c8866dc86104a5bcf10691c236e049"
 
       def install
         bin.install "sekret"
@@ -29,15 +29,15 @@ class Sekret < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/eazyhozy/sekret/releases/download/v0.1.1/sekret_linux_amd64.tar.gz"
-      sha256 "782100ce47150d74a29b14fab0df89e150684e89f777a0739c234ff19b1d631d"
+      url "https://github.com/eazyhozy/sekret/releases/download/v0.2.0/sekret_linux_amd64.tar.gz"
+      sha256 "a19dc7f8744c27ecbcef810076c50d9dceb1039f27481eb6a25dabde1524dcdb"
       def install
         bin.install "sekret"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/eazyhozy/sekret/releases/download/v0.1.1/sekret_linux_arm64.tar.gz"
-      sha256 "4d7b709bc88698a3919cd48c39e8f05ee004be2b01ae6c061cb35f03a47e1922"
+      url "https://github.com/eazyhozy/sekret/releases/download/v0.2.0/sekret_linux_arm64.tar.gz"
+      sha256 "82f6fd117f4ac71605365a8cc11a028f9b7e5618dc4379143309c29f8a8d3eb9"
       def install
         bin.install "sekret"
       end
